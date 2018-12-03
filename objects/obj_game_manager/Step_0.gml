@@ -11,7 +11,11 @@ switch (state) {
 		break;
 	case GAME_STATE.STAGE_CLEAR:
 		if (keyboard_check_pressed(vk_space)) {
-			room_restart();
+			if (room_next(room) != -1) {
+				room_goto(room_next(room));
+			} else {
+				game_restart();
+			}
 		}
 		break;
 	case GAME_STATE.GAME_OVER:
