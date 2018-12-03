@@ -33,16 +33,6 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "010ed059-c16a-4f31-a788-30c7fb5282f1"
-        },
-        {
-            "id": "be08153c-b96b-403e-b213-e26c48bd2bca",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "010ed059-c16a-4f31-a788-30c7fb5282f1"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -72,9 +62,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "PLAYER_STATE.STAND",
             "varName": "state",
-            "varType": 1
+            "varType": 4
         },
         {
             "id": "2f1627e5-c696-4284-a7e1-f580d977b19e",
@@ -103,6 +93,20 @@
             "value": "0",
             "varName": "sub_image",
             "varType": 1
+        },
+        {
+            "id": "d493c966-6ffa-4a3f-a449-300795b55275",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "PLAYER_DIR.RIGHT",
+            "varName": "dir",
+            "varType": 4
         }
     ],
     "solid": false,

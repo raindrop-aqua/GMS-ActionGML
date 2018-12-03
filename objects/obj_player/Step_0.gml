@@ -3,12 +3,16 @@
 hspeed = 0
 // プレイヤーの移動
 if (keyboard_check(vk_left)) {
+	dir = PLAYER_DIR.LEFT;
+	
 	if (place_free(x - global.PLAYER_HSPEED, y)) {	
 		hspeed = -global.PLAYER_HSPEED;
 	} else {
 		move_contact_solid(180, global.PLAYER_HSPEED);
 	}
 } else if (keyboard_check(vk_right)) {
+	dir = PLAYER_DIR.RIGHT;
+
 	if (place_free(x + global.PLAYER_HSPEED, y)) {	
 		hspeed = global.PLAYER_HSPEED;
 	} else {
