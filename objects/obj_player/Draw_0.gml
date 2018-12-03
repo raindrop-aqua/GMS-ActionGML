@@ -1,1 +1,1 @@
-draw_sprite(spr_player, 0, x, y);
+draw_sprite(spr_player, sub_image, x, y);
