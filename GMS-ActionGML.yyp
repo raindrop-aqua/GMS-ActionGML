@@ -167,14 +167,6 @@
             }
         },
         {
-            "Key": "a227fa65-b734-4a4b-9d2f-cdfcf763790a",
-            "Value": {
-                "id": "52a24ac5-1279-493c-908f-e652f977161f",
-                "resourcePath": "views\\a227fa65-b734-4a4b-9d2f-cdfcf763790a.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "a4a8424f-50bd-40c7-8b7b-e58d12c9085c",
             "Value": {
                 "id": "52f846bc-7790-44e0-b3cc-74388f2d9388",
@@ -188,6 +180,14 @@
                 "id": "9054d9b6-8b7c-4a8c-9856-607d33e7d40c",
                 "resourcePath": "views\\bb2e6566-696e-499e-8474-76c036d2fd69.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bc7be3de-b8a6-4cbe-bb49-b994abe38761",
+            "Value": {
+                "id": "1bc1625e-67ce-47b5-ad48-97b348b5fe9b",
+                "resourcePath": "fonts\\fnt_main\\fnt_main.yy",
+                "resourceType": "GMFont"
             }
         },
         {

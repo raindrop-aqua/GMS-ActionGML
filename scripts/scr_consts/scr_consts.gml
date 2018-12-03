@@ -18,3 +18,11 @@ enum PLAYER_DIR {
 	RIGHT = 0,
 	LEFT = 1
 }
+
+// ゲームの状態
+enum GAME_STATE {
+	INIT = 0,
+	MAIN = 1,
+	STAGE_CLEAR = 2,
+	GAME_OVER = 3
+}

@@ -1,3 +1,6 @@
+draw_set_font(fnt_main);
+draw_set_color(c_white);
+
 scr_consts();
 
 if (global.DEBUG) {
