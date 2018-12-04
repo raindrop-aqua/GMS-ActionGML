@@ -10,7 +10,7 @@ var ty = other.bbox_bottom;
 // 接地座標と足元座標の差を求める
 var dy = ty - y;
 // 離れすぎている場合は着地できない
-if (dt > 16) {
+if (dy > 16) {
 	exit;
 }
 
