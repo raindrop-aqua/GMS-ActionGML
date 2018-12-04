@@ -22,7 +22,20 @@ if (keyboard_check(vk_left)) {
 
 // ジャンプ
 if (keyboard_check_pressed(vk_space)) {
+	// ジャンプできるかどうか
+	var jumpable = false;
+
+	// 足元が空いているかどうか
 	if (place_free(x, y + 1) == false) {
+		jumpable = true;
+	}
+	// 足元がfloorかどうか
+	if (place_meeting(x, y + 1, obj_floor)) {
+		jumpable = true;
+	}
+
+	// 判定
+	if (jumpable) {
 		vspeed = -global.PLAYER_VSPEED;
 		gravity = global.PLAYER_GRAVITY;
 	}
