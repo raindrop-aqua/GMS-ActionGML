@@ -1,4 +1,4 @@
-global.ROOM_START = rm_002;
+global.ROOM_START = rm_title;
 global.DEBUG = true;
 
 global.PLAYER_HSPEED = 3;
