@@ -14,7 +14,7 @@ switch (state) {
 			if (room_next(room) != -1) {
 				room_goto(room_next(room));
 			} else {
-				game_restart();
+				room_goto(rm_ending);
 			}
 		}
 		break;

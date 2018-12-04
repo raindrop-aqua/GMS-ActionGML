@@ -1,13 +1,3 @@
-var str = "GAME STATE:" + string(state);
-draw_text(50, 50, str);
-
-if (instance_exists(obj_player)) {
-	str = "PLAYER STATE:" + string(obj_player.state);
-} else {
-	str = "PLAYER STATE:";
-}
-draw_text(50, 80, str);
-
 var text = "";
 
 switch (state) {
@@ -26,9 +16,10 @@ switch (state) {
 
 if (text != "") {
 	draw_set_halign(fa_center);
-	draw_text_transformed_color(
-		room_width / 2, 100, text,
-		5, 5, 0, c_yellow, c_yellow, c_red, c_red, 1
-	);
+
+	var px = room_width / 2;
+	var py = room_height / 2;
+	draw_text(px, py, text);
+
 	draw_set_halign(fa_left);
 }
