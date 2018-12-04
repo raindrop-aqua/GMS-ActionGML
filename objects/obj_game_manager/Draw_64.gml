@@ -1,7 +1,12 @@
-draw_text(50, 50, "GAME STATE:" + state);
+var str = "GAME STATE:" + string(state);
+draw_text(50, 50, str);
+
 if (instance_exists(obj_player)) {
-	draw_text(50, 80, "PLAYER STATE:" + obj_player.state);
+	str = "PLAYER STATE:" + string(obj_player.state);
+} else {
+	str = "PLAYER STATE:";
 }
+draw_text(50, 80, str);
 
 var text = "";
 
